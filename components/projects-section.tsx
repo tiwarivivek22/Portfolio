@@ -80,7 +80,7 @@ export function ProjectsSection() {
     },
   ]
 
-  const categories = ["All", "Web", "Python", "API", "Security"]
+  const categories = ["All"]
 
   const filteredProjects =
     activeFilter === "All" ? projects : projects.filter((project) => project.category === activeFilter)

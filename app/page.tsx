@@ -17,11 +17,11 @@ export default function Home() {
     <AboutSection key="about" />,
     <SkillsSection key="skills" />,
     <ExperienceSection key="experience" />,
-    <ProjectsSection key="projects" />,
+    // <ProjectsSection key="projects" />,
     <EducationSection key="education" />,
     <ResearchSection key="research" />,
     <CertificationsSection key="certifications" />,
-    <BlogsSection key="blogs" />,
+    // <BlogsSection key="blogs" />,
     <ContactSection key="contact" />,
   ]
 
