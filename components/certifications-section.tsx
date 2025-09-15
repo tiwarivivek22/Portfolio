@@ -49,7 +49,7 @@ export function CertificationsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {certifications.map((cert, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">

@@ -112,7 +112,7 @@ export function ExperienceSection() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Experience</h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {experiences.map((exp, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow group h-full flex flex-col">
                 <CardHeader className="pb-3 flex-shrink-0">

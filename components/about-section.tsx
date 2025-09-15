@@ -23,7 +23,7 @@ export function AboutSection() {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="w-100 h-100 bg-muted rounded-full flex items-center justify-center">
+              <div className="w-full max-w-xs aspect-square bg-muted rounded-full flex items-center justify-center mx-auto">
                 <img
                   src="/Vivek.jpg"
                   alt="Vivek Prabhat"
