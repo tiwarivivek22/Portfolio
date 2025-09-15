@@ -11,73 +11,74 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: "Insta-Cypher",
+      title: "Namaste Kutumbh",
       description:
-        "The Instagram Password Cracker is a Bash script designed to perform brute-force attacks on Instagram accounts to recover forgotten or lost passwords. It uses list of possible passwords and various techniques to attempt to recover Instagram account.",
-      technologies: ["Bash", "Cybersecurity", "Ethical Hacking"],
-      category: "Security",
+        "Namaste Kutumbh is a travel web application that provides users with information about the Indian Culture, including event details, schedules, and accommodations. It also offers features like trip planning, booking options, and user reviews to enhance the travel experience.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
+      category: "Travel",
       demoLink: "#",
-      codeLink: "#",
+      codeLink: "https://github.com/tiwarivivek22",
     },
     {
-      title: "Memory Game",
+      title: "Sports Sync",
       description:
-        "This is a simple Web Application memory game implemented using HTML, CSS, and JavaScript. The goal of the game is to match pairs of cards with the same emoji. Have fun matching the cards and enhancing your memory!",
+        "Sports Sync is a sports event management web application that allows users to create, manage, and participate in various sports events. It provides features such as event scheduling, team management, score tracking, and real-time updates to enhance the overall sports experience.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
+      category: "Sports",
+      demoLink: "#",
+      codeLink: "https://github.com/tiwarivivek22",
+    },
+{
+      title: "CareSync AI",
+      description:
+        "CareSync AI is a healthcare web application that leverages artificial intelligence to provide personalized health recommendations and insights. Users can track their health metrics, receive tailored advice, and connect with healthcare professionals for virtual consultations.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
+      category: "Healthcare",
+      demoLink: "#",
+      codeLink: "https://github.com/tiwarivivek22",
+    },
+
+    {
+      title: "Gym Website",
+      description:
+        "This is a responsive Gym Website built using HTML, CSS, and JavaScript. It features a modern design with sections for services, trainers, pricing, and contact information. The website is optimized for both desktop and mobile devices, providing an engaging user experience.",
       technologies: ["HTML", "CSS", "JavaScript"],
       category: "Web",
       demoLink: "#",
-      codeLink: "#",
+      codeLink: "https://github.com/tiwarivivek22",
     },
     {
-      title: "Task Manager",
+      title: "VidhiVani",
       description:
-        "This is a simple to-do list web application created with HTML, CSS, and JavaScript. It allows users to add and manage tasks in a list format. Never lose a track of your pending tasks. With integrated reminder feature, it won't let you miss on your important tasks!",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      category: "Web",
-      demoLink: "#",
-      codeLink: "#",
+        "A next-gen AI virtual assistant for the Department of Justice to simplify public access to judicial services.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript", "AI/ML"],
+      category: "AI/ML",
+      codeLink: "https://github.com/tiwarivivek22",
     },
     {
-      title: "Quotes Web Application",
+      title: "Mental Health System",
       description:
-        "With this Quotes Web Application, you have access to all the random quotes on internet at one place! Save and share your favorite quotes with everyone in just a click. The app's clean and stylish design, powered by CSS and Font Awesome icons, enhances the user experience.",
-      technologies: ["HTML", "CSS", "JavaScript", "Font Awesome"],
-      category: "Web",
-      demoLink: "#",
-      codeLink: "#",
+        "An AI-powered mental health support system that provides personalized assistance and resources to individuals seeking help for mental health issues.",
+      technologies: ["Python", "Django", "AI/ML"],
+      category: "AI/ML",
+      codeLink: "https://github.com/tiwarivivek22",
     },
-    {
-      title: "Authentication and Authorization API",
-      description:
-        "This is a simple RESTful API built with Flask that provides user registration, login, and token-based authentication. It allows users to register, log in, and access protected endpoints by providing a valid access token.",
-      technologies: ["Python", "Flask", "REST API", "JWT"],
-      category: "API",
-      codeLink: "#",
-    },
-    {
-      title: "Facial Recognition API",
-      description:
-        "This API allows users to upload images and receive facial recognition results, including bounding boxes around detected faces and corresponding labels. This can be used in many other projects which require Facial Recognition system.",
-      technologies: ["Python", "Computer Vision", "AI/ML"],
-      category: "API",
-      codeLink: "#",
-    },
-    {
-      title: "Code Snippet Manager",
-      description:
-        "The Code Snippet Manager is a Python application that allows you to store, organize, and retrieve reusable code snippets. It provides a user-friendly interface to manage your snippets, making it easier to find and reuse code for your projects.",
-      technologies: ["Python", "GUI", "Database"],
-      category: "Python",
-      codeLink: "#",
-    },
-    {
-      title: "AI-Driven Code Formatter",
-      description:
-        "An AI-Driven Code Formatter is a powerful tool that leverages artificial intelligence and machine learning techniques to automatically format and optimize code written in various programming languages. It aims to improve code readability, maintainability..",
-      technologies: ["Python", "AI/ML", "Code Analysis"],
-      category: "Python",
-      codeLink: "#",
-    },
+    // {
+    //   title: "Code Snippet Manager",
+    //   description:
+    //     "The Code Snippet Manager is a Python application that allows you to store, organize, and retrieve reusable code snippets. It provides a user-friendly interface to manage your snippets, making it easier to find and reuse code for your projects.",
+    //   technologies: ["Python", "GUI", "Database"],
+    //   category: "Python",
+    //   codeLink: "#",
+    // },
+    // {
+    //   title: "AI-Driven Code Formatter",
+    //   description:
+    //     "An AI-Driven Code Formatter is a powerful tool that leverages artificial intelligence and machine learning techniques to automatically format and optimize code written in various programming languages. It aims to improve code readability, maintainability..",
+    //   technologies: ["Python", "AI/ML", "Code Analysis"],
+    //   category: "Python",
+    //   codeLink: "#",
+    // },
   ]
 
   const categories = ["All"]
@@ -131,28 +132,21 @@ export function ProjectsSection() {
                   </div>
 
                   <div className="flex gap-2 mt-auto">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className={`${project.demoLink ? "flex-1" : "w-full"} text-xs sm:text-sm`}
-                    >
-                      <Github className="mr-1 sm:mr-2 h-3 w-3" />
-                      <span className="hidden sm:inline">View Code</span>
-                      <span className="sm:hidden">Code</span>
-                    </Button>
+                    <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="w-full">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className={`${project.demoLink ? "flex-1" : "w-full"} text-xs sm:text-sm`}
+                      >
+                        <Github className="mr-1 sm:mr-2 h-3 w-3" />
+                        <span className="hidden sm:inline">View Code</span>
+                        <span className="sm:hidden">Code</span>
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          <div className="text-center mt-6 sm:mt-8">
-            <p className="text-muted-foreground mb-4 text-sm sm:text-base px-4">
-              Source codes of all these projects are available on my GitHub!
-            </p>
-            <Button variant="ghost" className="text-primary hover:text-primary/80 text-xs sm:text-sm">
-              I also have additional projects that are waiting for your consideration on my GitHub
-            </Button>
           </div>
         </div>
       </div>

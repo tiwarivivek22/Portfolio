@@ -50,6 +50,9 @@ export function ExperienceSection() {
         "Collaborated within a multidisciplinary team to drive impactful outcomes.",
         "Worked on scalable solutions applicable to real-life challenges.",
       ],
+      links: [
+        { label: "Certificate", href: "https://drive.google.com/file/d/15KNOJlbJ5j4vDEHLDmpZhMsfjjfDpY2N/view?usp=sharing"},
+      ],
     },
     {
       title: "Front-end Developer Intern",
@@ -65,7 +68,6 @@ export function ExperienceSection() {
       ],
       links: [
         { label: "Projects", href: "https://github.com/tiwarivivek22/PAGES-OF-FIGMAGMENT-SOLUTION" },
-        { label: "Certificate", href: "#" },
       ],
     },
     {
@@ -81,8 +83,7 @@ export function ExperienceSection() {
         "Produced engaging content across various formats, including articles, blogs, social media posts, and newsletters.",
       ],
       links: [
-        { label: "Certificate", href: "#" },
-        { label: "Project", href: "#" },
+        { label: "Certificate", href: "https://drive.google.com/file/d/1LigY2yfUZrfrAlQBHJ-ULoROiKdgALac/view?usp=sharing" },
       ],
     },
     {
@@ -98,8 +99,7 @@ export function ExperienceSection() {
         "Demonstrated strong leadership and teamwork skills while managing a team of volunteers for various college activities.",
       ],
       links: [
-        { label: "Certificate", href: "#" },
-        { label: "Project", href: "#" },
+        { label: "Certificate", href: "https://drive.google.com/file/d/1SuVgW_z6HlWnNtaYXfwkBLssjXZbiR-k/view?usp=sharing" },
       ],
     },
   ]

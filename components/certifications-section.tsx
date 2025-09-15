@@ -53,13 +53,13 @@ export function CertificationsSection() {
           {certifications.map((cert, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 bg-primary/10 rounded-lg">
+                <div className="flex flex-wrap items-center gap-3">
+                  <div className="p-2 bg-primary/10 rounded-lg flex-shrink-0">
                     <Award className="h-5 w-5 text-primary" />
                   </div>
-                  <div className="flex-1">
-                    <CardTitle className="text-lg leading-tight mb-2">{cert.title}</CardTitle>
-                    <CardDescription className="font-medium text-primary">{cert.issuer}</CardDescription>
+                  <div className="flex-1 min-w-0">
+                    <CardTitle className="text-lg leading-tight mb-2 break-words">{cert.title}</CardTitle>
+                    <CardDescription className="font-medium text-primary break-words">{cert.issuer}</CardDescription>
                   </div>
                 </div>
               </CardHeader>
@@ -69,15 +69,17 @@ export function CertificationsSection() {
                   <span className="text-sm text-muted-foreground">{cert.date}</span>
                 </div>
                 {cert.link !== "#" ? (
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-full bg-transparent"
-                    onClick={() => window.open(cert.link, '_blank')}
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Certificate
-                  </Button>
+                  <>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full bg-transparent"
+                      onClick={() => window.open(cert.link, '_blank')}
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Certificate
+                    </Button>
+                  </>
                 ) : (
                   <Button variant="outline" size="sm" className="w-full bg-transparent" disabled>
                     <ExternalLink className="mr-2 h-4 w-4" />
