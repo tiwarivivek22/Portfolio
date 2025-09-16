@@ -81,7 +81,7 @@ export function HeroSection() {
               <ExternalLink className="mr-2 h-4 w-4" />
               View My Work
             </Button>
-            <a href="https://drive.google.com/uc?export=download&id=1TKgeN-WSv9p_v5-2-6K76muv4SL63Ygc" download target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1512tLwr0heQkDF0nvk3WBbwt4R8Wh5aM/view?usp=drive_link" download target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg" className="w-full sm:w-auto bg-transparent">
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
@@ -114,7 +114,7 @@ export function HeroSection() {
 
       <Dialog open={isPreviewOpen} onOpenChange={setIsPreviewOpen}>
         <DialogContent className="max-w-4xl w-full h-[80vh]">
-          <iframe src="https://drive.google.com/file/d/1TKgeN-WSv9p_v5-2-6K76muv4SL63Ygc/preview" className="w-full h-full border-0" title="Resume Preview" />
+          <iframe src="https://drive.google.com/file/d/1512tLwr0heQkDF0nvk3WBbwt4R8Wh5aM/view?usp=drive_link" className="w-full h-full border-0" title="Resume Preview" />
         </DialogContent>
       </Dialog>
     </section>
